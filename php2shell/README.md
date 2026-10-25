@@ -9,7 +9,7 @@ Emergency mitigation tool designed by **ArmHack-Team** to neutralize critical RC
 > [!IMPORTANT]
 > **Աշխատացնելուց առաջ անպայման բექափ (Backup) արեք! / Перед запуском обязательно сделайте резервную копию (Backup)! / Always Backup Before Running!**
 >
-> * **HY:** Թեև սկրիպտն ավտոմատ բექափ է անում փոփոխվող ֆայլերը (`*.bak_php2shell`) և ստուգում է կոնֆիգները սերվիսները ռեստարտ անելուց առաջ, **խստորեն խորհուրդ ենք տալիս production սերվերի վրա `--apply` անելուց առաջ ձեռքով անել սերվերի կոնֆիգների լրիվ բექափ (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) կամ VM-ի snapshot**։
+> * **HY:** Թեև սկրիպտն ավտոմատ բեկափ է անում փոփոխվող ֆայլերը (`*.bak_php2shell`) և ստուգում է կոնֆիգները սերվիսները ռեստարտ անելուց առաջ, **խստորեն խորհուրդ ենք տալիս production սերվերի վրա `--apply` անելուց առաջ ձեռքով անել սերվերի կոնֆիգների լրիվ բექափ (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) կամ VM-ի snapshot**։
 > * **RU:** Несмотря на то, что скрипт автоматически создаёт резервные копии изменяемых файлов (`*.bak_php2shell`) и проверяет конфигурацию перед перезапуском служб, **настоятельно рекомендуется сделать полный ручной бэкап конфигураций вашего сервера (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) или снапшот ВМ перед запуском `--apply` на продакшене**.
 > * **EN:** Although this script automatically creates idempotent backups (`*.bak_php2shell`) and validates service configurations before reloading, **we strongly recommend creating a manual backup of your server configuration directories (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) or a VM snapshot prior to running `--apply` in production**.
 
