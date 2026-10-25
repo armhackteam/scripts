@@ -7,14 +7,16 @@ Emergency mitigation tool designed by **ArmHack-Team** to neutralize critical RC
 ---
 
 > [!IMPORTANT]
-> **Перед запуском обязательно сделайте резервную копию (Backup)! / Always Backup Before Running!**
+> **Գործարկելուց առաջ պարտադիր կատարեք պահուստային պատճենում (Backup)! / Перед запуском обязательно сделайте резервную копию (Backup)! / Always Backup Before Running!**
 >
+> * **HY:** Չնայած այն հանգամանքին, որ սկրիպտն ավտոմատ կերպով ստեղծում է փոփոխվող ֆայլերի պահուստային պատճենները (`*.bak_php2shell`) և ստուգում է կոնֆիգուրացիան ծառայությունները վերագործարկելուց առաջ, **խստորեն խորհուրդ է տրվում նախքան production միջավայրում `--apply` գործարկելը ձեռքով ստեղծել սերվերի կոնֆիգուրացիաների ամբողջական պահուստային պատճեն (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) կամ վիրտուալ մեքենայի snapshot**։
 > * **RU:** Несмотря на то, что скрипт автоматически создаёт резервные копии изменяемых файлов (`*.bak_php2shell`) и проверяет конфигурацию перед перезапуском служб, **настоятельно рекомендуется сделать полный ручной бэкап конфигураций вашего сервера (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) или снапшот ВМ перед запуском `--apply` на продакшене**.
 > * **EN:** Although this script automatically creates idempotent backups (`*.bak_php2shell`) and validates service configurations before reloading, **we strongly recommend creating a manual backup of your server configuration directories (`/etc/php*`, `/etc/nginx*`, `/etc/httpd*`) or a VM snapshot prior to running `--apply` in production**.
 
 > [!WARNING]
-> **Ограничения совместимости / Compatibility Disclaimer**
+> **Համատեղելիության սահմանափակումներ / Ограничения совместимости / Compatibility Disclaimer**
 >
+> * **HY:** **ArmHack-Team** թիմը հաշվի է առել ստանդարտ սերվերային միջավայրերի և դիստրիբուտիվների մեծ մասը, սակայն **հնարավոր չէ հաշվի առնել PHP-ի բացարձակապես բոլոր հատուկ (custom) հավաքածուները, ոչ ստանդարտ ուղիները և յուրահատուկ կոնֆիգուրացիաները**։ Որոշ ոչ ստանդարտ միջավայրերում սկրիպտը կարող է ամբողջությամբ չաշխատել կամ պահանջել ձեռքով կարգավորում (օրինակ՝ `PHP2SHELL_SEARCH_ROOTS` միջավայրի փոփոխականի միջոցով)։ Փոփոխությունները կիրառելուց հետո անպայման ստուգեք ձեր ծառայությունների աշխատանքը։
 > * **RU:** Команда **ArmHack-Team** учла большинство стандартных серверных окружений и дистрибутивов, однако **учесть абсолютно все кастомные сборки, нестандартные пути и специфические конфигурации PHP невозможно**. В некоторых нестандартных окружениях скрипт может сработать не полностью или потребовать ручной настройки (например, через переменную окружения `PHP2SHELL_SEARCH_ROOTS`). Обязательно проверяйте работу ваших сервисов после применения изменений.
 > * **EN:** While **ArmHack-Team** has engineered this tool to support the vast majority of standard PHP environments, **it is impossible to account for every custom PHP build, non-standard directory layout, or third-party control panel**. On highly customized systems, manual verification or specifying `PHP2SHELL_SEARCH_ROOTS` may be required.
 
