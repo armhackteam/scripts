@@ -4,7 +4,7 @@ Official repository of security mitigation, patching, and server hardening scrip
 
 > [!IMPORTANT]
 > **Backup Warning / Предупреждение о резервном копировании / Զգուշացում բեքափի մասին**
-> * **HY:** Սերվերի վրա ցանկացած սկրիպտ աշխատացնելուց առաջ անպայման արեք կոնֆիգ ֆայլերի լրիվ բექափ (backup) կամ VM-ի snapshot։ Մենք հաշվի ենք առել սերվերների ամենատարածված տարբերակները, բայց անհնար է նախատեսել բոլոր կաստոմ (custom) հավաքածուներն ու կոնֆիգները։
+> * **HY:** Սերվերի վրա ցանկացած սկրիպտ աշխատացնելուց առաջ անպայման արեք կոնֆիգ ֆայլերի լրիվ բեկափ (backup) կամ VM-ի snapshot։ Մենք հաշվի ենք առել սերվերների ամենատարածված տարբերակները, բայց անհնար է նախատեսել բոլոր կաստոմ (custom) հավաքածուներն ու կոնֆիգները։
 > * **RU:** Перед запуском любых скриптов на боевых серверах обязательно создавайте полную резервную копию конфигурационных файлов или снапшот виртуальной машины. Мы учли большинство стандартных окружений, однако учесть абсолютно все кастомные сборки и конфигурации невозможно.
 > * **EN:** Always create a full manual backup of your server configurations or a VM snapshot before running any mitigation scripts in production. While our tools cover the vast majority of standard deployments, it is impossible to account for every custom environment.
 
